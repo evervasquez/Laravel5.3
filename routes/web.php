@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('page.welcome');
 });
+
+Route::post('/test/validation', 'PageController@index');
