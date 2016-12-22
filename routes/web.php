@@ -15,4 +15,12 @@ Route::get('/', function () {
     return view('page.welcome');
 });
 
+Route::get('/contact', function () {
+    $names = [
+      'ever', 'jose', 'daniel'
+    ];
+//    $name = 'jose';
+    return view('page.contact', compact('names'));
+});
+
 Route::post('/test/validation', 'PageController@index');
